@@ -1,0 +1,7 @@
+require('options')
+require('plugins')
+require('colorscheme')
+require('lsp')
+require("luasnip.loaders.from_vscode").lazy_load()
+require('autoclose').setup()
+require('lualine').setup()
