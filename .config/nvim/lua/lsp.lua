@@ -18,3 +18,4 @@ require('mason-lspconfig').setup({
 lspconfig.clangd.setup{}
 lspconfig.ts_ls.setup{}
 lspconfig.lua_ls.setup{}
+lspconfig.terraformls.setup{}
