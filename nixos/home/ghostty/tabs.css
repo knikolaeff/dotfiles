@@ -1,0 +1,32 @@
+headerbar {
+  min-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+tabbar .box {
+  background: #33322C;
+  color: #D6D5CB;
+}
+tabbar tabbox {
+  min-height: 10px;
+  margin: 0;
+  padding: 0;
+}
+tabbar tab,
+tabbar tab:hover,
+tabbar .end-action button {
+  min-height: 20px;
+  margin: 0;
+  padding: 0;
+  background: #555550;
+  color: #D6D5CB;
+}
+tabbar tab label {
+  font-size: 11px;
+}
+tabbar tab:selected,
+tabbar tab:selected:hover,
+tabbar .end-action button:hover {
+  background: #D6D5CB;
+  color: #33322C;
+}
