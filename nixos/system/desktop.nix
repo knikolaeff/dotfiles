@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   services.xserver = {
     enable = true;
@@ -10,6 +10,26 @@
 
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
+
+  services.xremap = {
+    enable = true;
+    serviceMode = "user";
+    userName = "kirill";
+    withKDE = true;
+    watch = true;
+    extraArgs = [ "--no-window-logging" ];
+    # Ghostty handles Alt shortcuts itself; preserve chords with extra modifiers.
+    yamlConfig = ''
+      keymap:
+        - exact_match: true
+          application:
+            not: ["/(?i)ghostty/", ""]
+          remap:
+            Alt-c: Ctrl-c
+            Alt-v: Ctrl-v
+            Alt-a: Ctrl-a
+    '';
+  };
 
   services.printing.enable = true;
 

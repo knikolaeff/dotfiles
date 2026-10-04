@@ -32,27 +32,43 @@
     };
 
     shortcuts = {
-      "KDE Keyboard Layout Switcher"."Switch to Next Keyboard Layout" = "Alt+Shift";
-      # Clear the persisted launcher binding before assigning it to Ghostty.
-      "services/org.wezfurlong.wezterm.desktop"."_launch" = "none";
+      "KDE Keyboard Layout Switcher" = {
+        "Switch to Next Keyboard Layout" = "Alt+Shift";
+        "Switch to Last-Used Keyboard Layout" = "none";
+      };
       "services/com.mitchellh.ghostty.desktop"."_launch" = "Meta+Return";
       kwin = {
-        # Free Meta+T/W/D and arrows for terminal tabs, surfaces and panes.
-        "Edit Tiles" = "Meta+Ctrl+Alt+T";
+        # Keep tiling disabled and Meta+Alt navigation available for Ghostty panes.
+        "Edit Tiles" = "none";
         "Overview" = "Meta+Ctrl+Alt+W";
         "Show Desktop" = "Meta+Ctrl+Alt+D";
-        "Window Quick Tile Left" = "Meta+Ctrl+Alt+Left";
-        "Window Quick Tile Right" = "Meta+Ctrl+Alt+Right";
-        "Window Quick Tile Top" = "Meta+Ctrl+Alt+Up";
-        "Window Quick Tile Bottom" = "Meta+Ctrl+Alt+Down";
-        "Switch Window Left" = "Meta+Alt+Shift+Left";
-        "Switch Window Right" = "Meta+Alt+Shift+Right";
-        "Switch Window Up" = "Meta+Alt+Shift+Up";
-        "Switch Window Down" = "Meta+Alt+Shift+Down";
+        "Window Quick Tile Left" = "none";
+        "Window Quick Tile Right" = "none";
+        "Window Quick Tile Top" = "none";
+        "Window Quick Tile Bottom" = "none";
+        "Switch Window Left" = [
+          "Meta+Alt+Shift+Left"
+          "Meta+Alt+Shift+H"
+        ];
+        "Switch Window Right" = [
+          "Meta+Alt+Shift+Right"
+          "Meta+Alt+Shift+L"
+        ];
+        "Switch Window Up" = [
+          "Meta+Alt+Shift+Up"
+          "Meta+Alt+Shift+K"
+        ];
+        "Switch Window Down" = [
+          "Meta+Alt+Shift+Down"
+          "Meta+Alt+Shift+J"
+        ];
       };
       plasmashell = {
-        "next activity" = "Meta+A";
-        "previous activity" = "Meta+Shift+A";
+        # Keep clipboard history off plain Meta+V.
+        "show-on-mouse-pos" = "Meta+Shift+V";
+        "manage activities" = "none";
+        "next activity" = "none";
+        "previous activity" = "none";
       };
     };
 

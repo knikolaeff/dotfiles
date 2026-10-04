@@ -40,18 +40,32 @@
       ];
 
       keybind = [
-        "super+t=new_tab"
-        "super+d=new_split:right"
-        "super+shift+d=new_split:down"
-        "super+left=previous_tab"
-        "super+right=next_tab"
-        "super+up=previous_tab"
-        "super+down=next_tab"
+        # Use physical Alt as Command and keep Ctrl+C for stopping commands.
+        "alt+c=copy_to_clipboard"
+        "alt+v=paste_from_clipboard"
+        "alt+a=select_all"
+        "alt+f=start_search"
+        "alt+n=new_window"
+        "alt+equal=increase_font_size:1"
+        "alt+plus=increase_font_size:1"
+        "alt+minus=decrease_font_size:1"
+        "alt+0=reset_font_size"
+        "alt+t=new_tab"
+        "alt+d=new_split:right"
+        "alt+shift+d=new_split:down"
+        "alt+left=previous_tab"
+        "alt+h=previous_tab"
+        "alt+right=next_tab"
+        "alt+l=next_tab"
         "super+alt+left=goto_split:left"
+        "super+alt+h=goto_split:left"
         "super+alt+right=goto_split:right"
+        "super+alt+l=goto_split:right"
         "super+alt+up=goto_split:up"
+        "super+alt+k=goto_split:up"
         "super+alt+down=goto_split:down"
-        "super+w=close_surface"
+        "super+alt+j=goto_split:down"
+        "alt+w=close_surface"
       ];
     };
   };

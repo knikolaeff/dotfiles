@@ -31,6 +31,11 @@
       inputs.home-manager.follows = "home-manager";
     };
 
+    xremap = {
+      url = "github:xremap/nix-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nixvim = {
       url = "github:nix-community/nixvim/nixos-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -52,6 +57,7 @@
           ./configuration.nix
           inputs.nixos-hardware.nixosModules.lenovo-thinkpad-t480s
           inputs.home-manager.nixosModules.default
+          inputs.xremap.nixosModules.default
         ];
       };
     };
