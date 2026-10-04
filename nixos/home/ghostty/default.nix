@@ -5,9 +5,10 @@
     enableZshIntegration = true;
 
     settings = {
+      async-backend = "epoll";
       font-family = "JetBrainsMono Nerd Font";
       font-size = 13;
-      background-opacity = 0.9;
+      background-opacity = 0.95;
       bell-features = "no-system,no-audio";
 
       foreground = "#D6D5CB";
