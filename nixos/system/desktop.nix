@@ -31,6 +31,11 @@
     '';
   };
 
+  environment.plasma6.excludePackages = with pkgs.kdePackages; [
+    konsole
+    kate
+  ];
+
   services.printing.enable = true;
 
   services.pulseaudio.enable = false;
