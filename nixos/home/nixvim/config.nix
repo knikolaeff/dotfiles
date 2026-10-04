@@ -37,6 +37,7 @@ in
   ];
 
   plugins = {
+    hardtime.enable = true;
     blink-cmp = {
       enable = true;
       settings.keymap.preset = "enter";
