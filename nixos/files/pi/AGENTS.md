@@ -21,6 +21,6 @@
 
 ## Simplified Technical English (STE)
 
-- Use STE principles in replies and documentation for me: simple words, active voice, short sentences, and consistent technical terms.
-- Keep docs short and practical. Use one topic per paragraph and one action per instruction step. Include the detail needed for correctness.
-- Preserve code, commands, paths, identifiers, and verbatim quotations when applying STE.
+- In replies and docs, use simple words, active voice, short, complete sentences, and consistent technical terms.
+- Use one topic per paragraph and one action per instruction step. Write instructions as direct commands, with required conditions before the action.
+- Preserve code, commands, paths, identifiers, and verbatim quotations.

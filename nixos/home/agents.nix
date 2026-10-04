@@ -13,5 +13,6 @@
   programs.codex = {
     enable = true;
     package = unstablePkgs.codex;
+    context = ../files/pi/AGENTS.md;
   };
 }
