@@ -22,6 +22,9 @@
 
   home.packages = with pkgs; [
     wget
+    wl-clipboard
+    xclip
+    ripgrep
     mpv
     unstablePkgs.telegram-desktop
     fastfetch
