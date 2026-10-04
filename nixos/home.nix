@@ -32,8 +32,6 @@
     uv
     nodejs
 
-    inputs.herdr-nix.packages.${stdenv.hostPlatform.system}.default
-
     inputs.helium.packages.${stdenv.hostPlatform.system}.default
   ];
 
